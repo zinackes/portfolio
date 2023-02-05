@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="switch.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Oswald&family=Poppins&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
@@ -13,19 +14,33 @@
 <body>
 
             <!-- Faire site sur la F1 + mettre comment prochain a faire dans le site
-                + ajouter icon de front end mentor avec asterix qui dis ce que ca represente, et mettre ca pour les projets qui viennent de las bas
-            Ajouter au niveau des skills/competences que je fais The Odin projet avec petit text-->
+            Ajouter au niveau des skills/competences que je fais The Odin projet avec petit text
+        Skills: Flexbox; Gridbox; Git/Github
+        to developp: JS,
+        to learn: React; API
+        Language acquired: French (native), English
 
-    <main>
-        <section class="first">
+        Footer: lien prend pas tt image
+    
+        Faire google sheet tableau des skills etc
+        Faire bouton pour switch entre liste et tableau sur le site
+    
+    
+        Essayer de faire animation quand on passe du skills au talbeau: 
+        les skills vont vers la gauche et le tableau arrive par la droite.
+        Dans le meme style:
+        Faire effet de couleur sur le type de format utilisé genre avec transition d'un type a l'autre-->
+
+    <main class="flex-direction">
+        <section class="first flex-direction">
             <h1>Hello, I'm <br> Mathys Sclafer</h1>
-            <p>I'm a french beginner in the front-end developpment.</p>
+            <p>A french beginner in the front-end developpment.</p>
         </section>
 
 
-        <section class="second">
+        <section class="second reveal">
             <h2 class="title">About me</h2>
-            <div class="presentation">
+            <div class="presentation flex">
                 <p>I'm currently 18 years old and still at school, in something
                     totally different, biology, however, i plan on going in a informatique
                     school, i want to focus on a web developpment career, i am passionate
@@ -41,17 +56,131 @@
             </div>
         </section>
 
-        <section class="third">
+        <section class="third reveal">
             <h2 class="title">Projects</h2>
-            <div class="projects">
-                <div class="project">
-                   <img src="" alt="">
-                   <p></p>
+            <div class="projects flex">
+                <div class="project flex-direction">
+                   <img src="../assets/QRCODEIMG.png" alt="QrCode projects">
+                   <a href="https://zinackes.github.io/qrcode/">QrCode (My first)</a>
+                </div>
+                <div class="project flex-direction">
+                   <img src="../assets/QRCODEIMG.png" alt="">
+                   <a href="https://zinackes.github.io/qrcode/">QrCode (My first)</a>
+                </div>
+                <div class="project flex-direction">
+                   <img src="../assets/QRCODEIMG.png" alt="">
+                   <a href="https://zinackes.github.io/qrcode/">QrCode (My first)</a>
+                </div>
+                <div class="project flex-direction">
+                   <img src="../assets/QRCODEIMG.png" alt="">
+                   <a href="https://zinackes.github.io/qrcode/">QrCode (My first)</a>
                 </div>
             </div>
         </section>
 
+        <p class="reveal">Choose the format:</p>
 
+        <div class="flex">
+            <p style="padding-right: 10px;" id="List" class="list">List</p>
+            <label class="switch">
+                <input type="checkbox" id="switch_button">
+                <span class="slider round"></span>
+            </label>
+            <p style="padding-left: 10px;" id="Table" class="">Table</p>
+        </div>
+
+        <section id="pas_tableau" class="hidden">
+        
+            <section class="four reveal">
+                <h2 class="title">Skills Acquired</h2>
+                <div class="skills flex">
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-html-5-40.png" alt="HTML 5 Logo">
+                        <p>HTML 5</p>
+                    </div>
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-css3-40.png" alt="CSS 3 logo">
+                        <p>CSS 3</p>
+                    </div>
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-flexbox-40.png   " alt="Flexbox representation">
+                        <p>Flexbox</p>
+                    </div>
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-git-40.png" alt="Git Logo">
+                        <p>Git/GitHub</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="five reveal">
+                <h2 class="title">Skill Learning</h2>
+                <div class="skills flex-direction">
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-javascript-logo-40.png" alt="Javascript Logo">
+                        <p>Javascript*</p>
+                    </div>
+                    <p>*Im learning Javascript with <a href="https://www.theodinproject.com/paths/foundations/courses/foundations">The Odin Project</a></p>
+                </div>
+            </section>
+        
+            <section class="six reveal">
+                <h2 class="title">Skills To Learn</h2>
+                <div class="skills flex">
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-react-native-40.png" alt="React Logo">
+                        <p>React</p>
+                    </div>
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-api-40.png" alt="API Logo">
+                        <p>API</p>
+                    </div>
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-dots-loading-40.png" alt="API Logo">
+                        <p>Much More</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="seven reveal">
+                <h2 class="title">Languages Acquired</h2>
+                <div class="skills flex">
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-france-40.png" alt="Javascript Logo">
+                        <p>French (native)</p>
+                    </div>
+                    <div class="flex-direction">
+                        <img src="../assets/icons8-great-britain-40.png" alt="Javascript Logo">
+                        <p>English</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+
+        <section id="tableau" class="">
+            <table border="1">
+                <tr>
+                    <th>Test</th>
+                </tr>
+            </table>
+        </section>
+
+
+
+
+        <footer>
+            <ul class="flex">
+                <li>
+                    <a href="https://github.com/zinackes">
+                    <img src="../assets/icons8-github-40.png" alt="Github Logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/mathys-sclafer-199726250/">
+                    <img src="../assets/icons8-linkedin-circled-40.png" alt="Linkedin Logo"></a></li>
+            </ul>
+            <p class="flex">Copyright © Mathys Sclafer</p>
+        </footer>
 
     </main>
 

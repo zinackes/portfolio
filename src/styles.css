@@ -5,19 +5,25 @@ body{
     padding: 0;
 }
 
-main{
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-direction{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+main{
     color: #fff;
 }
 
 .first{
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-bottom: 50px;
 
 }
@@ -35,9 +41,6 @@ main{
 }
 
 .presentation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #555555;
     padding: 20px;
     max-width: 500px;
@@ -78,18 +81,66 @@ main{
 
 
 .projects{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .project{
-    padding: 10px;
-    background-color: #fff;
+    padding: 12px;
+    background-color: #0d0d0d;
     border-radius: 10px;
 }
 
 .project > img{
     border-radius: 8px;
+    max-width: 200px;
+}
+
+.project > a{
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.list{
+    color: #2196F3;
+    transition: .3s ease-in-out;
+}
+.table{
+    color: #2196F3;
+    transition: .3s ease-in-out;
+}
+
+
+.skills{
+    gap: 30px;
+}
+
+.five a{
+    color: #43A6C6;
+}
+
+
+footer{
+    background-color: #333333;
+    width: 100%;
+}
+
+
+
+footer > ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-inline-start: 0;
+}
+
+
+.hidden{
+    display: none;
+}
+
+table{
+
 }
