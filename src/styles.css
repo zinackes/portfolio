@@ -1,0 +1,95 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.first{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.first > h1{
+    font-size: 110px;
+    font-weight: 400;
+    margin: 0px;
+    text-align: center;
+}
+.first > p{
+    font-size: 22px;
+    text-align: center;
+
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555555;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 2px;
+    line-height: 1.55;
+    transition: .3s ease-in-out;
+    box-shadow: black 0px 5px 15px;
+}
+
+.presentation > p{
+    letter-spacing: .1px;
+    font-size: 20px;
+
+}
+.presentation > p > span > a{
+    color: #43A6C6;
+}
+
+.presentation:hover{
+    transform: scale(1.02);
+    transition: .3s ease-in-out;
+}
+
+.second{
+    margin-bottom: 150px;
+}
+
+
+.title{
+    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+}
+
+.third{
+    margin-bottom: 100px;
+}
+
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.project > img{
+    border-radius: 8px;
+}
