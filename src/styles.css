@@ -127,6 +127,10 @@ footer{
     width: 100%;
 }
 
+footer > a{
+    height: 40px;
+}
+
 
 
 footer > ul{
