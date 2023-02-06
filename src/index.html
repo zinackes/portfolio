@@ -82,9 +82,9 @@
             </div>
         </section>
 
-        <p class="">Choose the format:</p>
+        <p class="reveal">Choose the format:</p>
 
-        <div class="flex">
+        <div class="flex reveal">
             <p style="padding-right: 10px;" id="List" class="list">List</p>
             <label class="switch">
                 <input type="checkbox" id="switch_button">
@@ -93,83 +93,164 @@
             <p style="padding-left: 10px;" id="Table" class="">Table</p>
         </div>
 
-        <section id="pas_tableau" class="hidden">
+        <section id="pas_tableau" class="reveal">
+            <div id="animationToLeftList">
         
-            <section class="four reveal">
-                <h2 class="title">Skills Acquired</h2>
-                <div class="skills flex">
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-html-5-40.png" alt="HTML 5 Logo">
-                        <p>HTML 5</p>
+                <section class="four reveal">
+                    <h2 class="title">Skills Acquired</h2>
+                    <div class="skills flex">
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-html-5-40.png" alt="HTML 5 Logo">
+                            <p>HTML 5</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-css3-40.png" alt="CSS 3 logo">
+                            <p>CSS 3</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-flexbox-40.png   " alt="Flexbox representation">
+                            <p>Flexbox</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-git-40.png" alt="Git Logo">
+                            <p>Git/GitHub</p>
+                        </div>
                     </div>
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-css3-40.png" alt="CSS 3 logo">
-                        <p>CSS 3</p>
+                </section>
+            
+                <section class="five reveal">
+                    <h2 class="title">Skill Learning</h2>
+                    <div class="skills flex-direction">
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-javascript-logo-40.png" alt="Javascript Logo">
+                            <p>Javascript*</p>
+                        </div>
+                        <p>*Im learning Javascript with 
+                            <a href="https://www.theodinproject.com/paths/foundations/courses/foundations">
+                                The Odin Project</a></p>
                     </div>
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-flexbox-40.png   " alt="Flexbox representation">
-                        <p>Flexbox</p>
+                </section>
+            
+                <section class="six reveal">
+                    <h2 class="title">Skills To Learn</h2>
+                    <div class="skills flex">
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-react-native-40.png" alt="React Logo">
+                            <p>React</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-api-40.png" alt="API Logo">
+                            <p>API</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-dots-loading-40.png" alt="API Logo">
+                            <p>Much More</p>
+                        </div>
                     </div>
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-git-40.png" alt="Git Logo">
-                        <p>Git/GitHub</p>
+                </section>
+            
+                <section class="seven reveal">
+                    <h2 class="title">Languages Acquired</h2>
+                    <div class="skills flex">
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-france-40.png" alt="Javascript Logo">
+                            <p>French (native)</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-great-britain-40.png" alt="Javascript Logo">
+                            <p>English</p>
+                        </div>
                     </div>
-                </div>
-            </section>
-        
-            <section class="five reveal">
-                <h2 class="title">Skill Learning</h2>
-                <div class="skills flex-direction">
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-javascript-logo-40.png" alt="Javascript Logo">
-                        <p>Javascript*</p>
-                    </div>
-                    <p>*Im learning Javascript with <a href="https://www.theodinproject.com/paths/foundations/courses/foundations">The Odin Project</a></p>
-                </div>
-            </section>
-        
-            <section class="six reveal">
-                <h2 class="title">Skills To Learn</h2>
-                <div class="skills flex">
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-react-native-40.png" alt="React Logo">
-                        <p>React</p>
-                    </div>
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-api-40.png" alt="API Logo">
-                        <p>API</p>
-                    </div>
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-dots-loading-40.png" alt="API Logo">
-                        <p>Much More</p>
-                    </div>
-                </div>
-            </section>
-        
-            <section class="seven reveal">
-                <h2 class="title">Languages Acquired</h2>
-                <div class="skills flex">
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-france-40.png" alt="Javascript Logo">
-                        <p>French (native)</p>
-                    </div>
-                    <div class="flex-direction">
-                        <img src="../assets/icons8-great-britain-40.png" alt="Javascript Logo">
-                        <p>English</p>
-                    </div>
-                </div>
-            </section>
+                </section>
+
+            </div>
 
         </section>
 
 
 
-        <section id="tableau" class="">
-            <table border="1">
-                <tr>
-                    <th>Test</th>
-                </tr>
-            </table>
+        <section id="tableau" class="hidden reveal">
+            <div id="animationToLeftTable">
+
+                <table border="">
+                    <tr>
+                        <th></th>
+                        <th>Acquired</th>
+                        <th>Learning</th>
+                        <th>To learn</th>
+                    </tr>
+                    <tr>
+                        <th>Skills</th>
+                        <th style="padding: 8px; display: flex; gap: 10px;">
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-html-5-40.png" alt="HTML 5 Logo">
+                            <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
+                                HTML 5</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-css3-40.png" alt="CSS 3 logo">
+                            <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
+                                CSS 3</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-flexbox-40.png   " alt="Flexbox representation">
+                            <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
+                                Flexbox</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-git-40.png" alt="Git Logo">
+                            <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
+                                Git/GitHub</p>
+                        </div>
+                        </th>
+    
+                        <th style="padding: 8px;">
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-javascript-logo-40.png" alt="Javascript Logo">
+                            <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
+                                Javascript*</p>
+                        </div>
+                        </th>
+    
+                        <th style="padding: 8px; display: flex; gap: 10px;">
+                            <div class="flex-direction">
+                                <img src="../assets/icons8-react-native-40.png" alt="React Logo">
+                                <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
+                                    React</p>
+                            </div>
+                            <div class="flex-direction">
+                                <img src="../assets/icons8-api-40.png" alt="API Logo">
+                                <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
+                                    API</p>
+                            </div>
+                            <div class="flex-direction">
+                                <img src="../assets/icons8-dots-loading-40.png" alt="API Logo">
+                                <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
+                                    Much More</p>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Languages</th>
+    
+                        <th style="padding: 8px; display: flex; gap: 30px; justify-content: center; align-items: center;">
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-france-40.png" alt="Javascript Logo">
+                            <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">French (native)</p>
+                        </div>
+                        <div class="flex-direction">
+                            <img src="../assets/icons8-great-britain-40.png" alt="Javascript Logo">
+                            <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">English</p>
+                        </div>
+                        </th>
+                    </tr>
+                </table>
+                
+                <p style="margin-bottom: 33.2px; margin-top: 15px; font-size: 13px; text-align: center;">*Im learning Javascript with 
+                    <a href="https://www.theodinproject.com/paths/foundations/courses/foundations">
+                        The Odin Project</a></p>
+
+            </div>
         </section>
 
 
@@ -182,6 +263,8 @@
                     <img src="../assets/icons8-github-40.png" alt="Github Logo"></a></li>
                 <li><a href="https://www.linkedin.com/in/mathys-sclafer-199726250/">
                     <img src="../assets/icons8-linkedin-circled-40.png" alt="Linkedin Logo"></a></li>
+                <li><a href="https://www.frontendmentor.io/profile/zinackes">
+                    <img src="../assets/favicon-32x32.png" alt="frontendmentor Logo"></a></li>
             </ul>
             <p class="flex">Copyright © Mathys Sclafer</p>
         </footer>
