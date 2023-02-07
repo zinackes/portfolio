@@ -1,5 +1,5 @@
 body{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     background-color: #1a1a1a;
     margin: 0;
     padding: 0;
@@ -41,13 +41,10 @@ main{
 }
 
 .presentation{
-    background-color: #555555;
     padding: 20px;
     max-width: 500px;
-    border-radius: 2px;
     line-height: 1.55;
     transition: .3s ease-in-out;
-    box-shadow: black 0px 5px 15px;
 }
 
 .presentation > p{
@@ -57,11 +54,6 @@ main{
 }
 .presentation > p > span > a{
     color: #43A6C6;
-}
-
-.presentation:hover{
-    transform: scale(1.02);
-    transition: .3s ease-in-out;
 }
 
 .second{
@@ -83,24 +75,33 @@ main{
 .projects{
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 1300px;
 }
 
 .project{
-    padding: 12px;
+    padding: 13px;
     background-color: #0d0d0d;
     border-radius: 10px;
 }
 
 .project > img{
     border-radius: 8px;
-    max-width: 200px;
+    max-width: 270px;
 }
 
 .project > a{
-    margin-top: 10px;
+    margin-top: 17px;
     font-size: 20px;
     text-decoration: none;
     color: white;
+    text-align: center;
+    max-width: 270px;
+    line-height: 23px;
+}
+
+.third a span{
+    font-size: 15px;
+    color: #777777;
 }
 
 .list{
