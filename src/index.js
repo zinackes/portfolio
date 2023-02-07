@@ -34,34 +34,36 @@ reveal();
 
 async function is_checked_false(){
 
-  animationToLeftList.classList.toggle("animationToLeftList");
-  animationToLeftTable.classList.toggle("animationToLeftTable");
-  await delay(1000);
+  animationToLeftList.classList.toggle("animate__backOutLeft");
   tableau.classList.toggle("hidden"); 
+  await delay(1050);
+  animationToLeftTable.classList.toggle("animate__backInRight");
 
   pas_tableau.classList.toggle("hidden");
   list.classList.toggle("list");
   table.classList.toggle("table");
 
-  await delay(1900);
-  animationToLeftTable.classList.toggle("animationToLeftTable");
-  animationToLeftList.classList.toggle("animationToLeftList");
+  await delay(1050);
+  animationToLeftList.classList.toggle("animate__backOutLeft");
+  animationToLeftTable.classList.toggle("animate__backInRight");
+
 }
 async function is_checked_true(){
 
-  animationToLeftList.classList.toggle("animationToLeftTable");
-  animationToLeftTable.classList.toggle("animationToLeftList");
+  animationToLeftTable.classList.toggle("animate__backOutLeft");
 
-  await delay(1000);
-
+  await delay(1050);
   pas_tableau.classList.toggle("hidden");
+  animationToLeftList.classList.toggle("animate__backInRight");
+
   tableau.classList.toggle("hidden");
   list.classList.toggle("list");
   table.classList.toggle("table");
 
-  await delay(1900);
-  animationToLeftList.classList.toggle("animationToLeftTable");
-  animationToLeftTable.classList.toggle("animationToLeftList");
+  await delay(1050);
+  animationToLeftList.classList.toggle("animate__backInRight");
+  animationToLeftTable.classList.toggle("animate__backOutLeft");
+
 }
 
 switch_button.onclick = function(){
