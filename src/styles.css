@@ -86,7 +86,8 @@ main{
 
 .project > img{
     border-radius: 8px;
-    max-width: 270px;
+    width: 270px;
+    height: 188px;
 }
 
 .project > a{
