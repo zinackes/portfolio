@@ -5,17 +5,19 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="scroll.css">
     <link rel="stylesheet" href="switch.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=author@400&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&family=Open+Sans&family=Oswald&family=Poppins&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Oswald&family=Poppins&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Mathys</title>
 </head>
 <body>
+    <div class="flex preloader" style="min-height: 100vh;">
+        <div class="loader"></div>
+    </div>
 
             <!-- Faire site sur la F1 + mettre comment prochain a faire dans le site
 
@@ -31,10 +33,11 @@
         </section>
 
 
-        <section class="second reveal">
-            <h2 class="title">About me</h2>
-            <div class="presentation flex">
-                <p>I'm currently 18 years old and still at school, in something
+        <section class="second reveal flex">
+                <img src="../assets/workspace-with-computer.png" alt="" style="max-width: 600px;">
+                <div class="presentation flex-direction">
+                    <h2 class="title">About me</h2>
+                    <p>I'm currently 18 years old and still at school, in something
                     totally different, biology, however, i plan on going in a informatique
                     school, i want to focus on a web developpment career, i am passionate
                     in what i do, i learned everything i know myself with internet and
@@ -45,8 +48,8 @@
                     All of my works are exposed below, feel free to check them out and 
                     contact me if you have any questions or advice, i'll be absolutely 
                     happy to answer.
-                </p>
-            </div>
+                    </p>
+                </div>
         </section>
 
         <section class="third reveal">
@@ -54,19 +57,36 @@
             <div class="projects flex">
                 <div class="project flex-direction">
                    <img src="../assets/QRCODEIMG.png" alt="QrCode projects">
-                   <a href="https://zinackes.github.io/qrcode/">QrCode (My first)</a>
+                   <a href="https://zinackes.github.io/qrcode/">QrCode (My first) <br> 
+                    <span>November 30 2022</span></a>
+                </div>
+                <div class="project flex-direction">
+                   <img src="../assets/interactive-rating.png" alt="">
+                   <a href="https://zinackes.github.io/qrcode/" style="font-size: 17px;">Interactive rating component <br> 
+                    <span style="font-size: 14px;">November 30 2022</span></a></a>
                 </div>
                 <div class="project flex-direction">
                    <img src="../assets/QRCODEIMG.png" alt="">
-                   <a href="https://zinackes.github.io/qrcode/">QrCode (My first)</a>
+                   <a href="https://zinackes.github.io/qrcode/">Fylo data storage</a>
                 </div>
                 <div class="project flex-direction">
                    <img src="../assets/QRCODEIMG.png" alt="">
-                   <a href="https://zinackes.github.io/qrcode/">QrCode (My first)</a>
+                   <a href="https://zinackes.github.io/qrcode/">Pricing component</a>
                 </div>
                 <div class="project flex-direction">
-                   <img src="../assets/QRCODEIMG.png" alt="">
-                   <a href="https://zinackes.github.io/qrcode/">QrCode (My first)</a>
+                   <img src="../assets/QRCODEIMG.png" alt="QrCode projects">
+                   <a href="https://zinackes.github.io/qrcode/">Social media dashboard<br> 
+                    <span>November 30 2022</span></a>
+                </div>
+                <div class="project flex-direction">
+                   <img src="../assets/QRCODEIMG.png" alt="QrCode projects">
+                   <a href="https://zinackes.github.io/qrcode/">QrCode Revamp <br> 
+                    <span>November 30 2022</span></a>
+                </div>
+                <div class="project flex-direction">
+                   <img src="https://zinackes.github.io/interactive-rating-component-v2/" alt="QrCode projects">
+                   <a href="https://zinackes.github.io/qrcode/">Interactive rating component Revamp<br> 
+                    <span>November 30 2022</span></a>
                 </div>
             </div>
         </section>
@@ -82,7 +102,7 @@
             <p style="padding-left: 10px;" id="Table" class="">Table</p>
         </div>
 
-        <section id="pas_tableau" class="">
+        <section id="pas_tableau" class="" style="margin-bottom: 15px;">
             <div id="animationToLeftList" class="animate__animated ">
         
                 <section class="four reveal">
@@ -121,24 +141,6 @@
                 </section>
             
                 <section class="six reveal">
-                    <h2 class="title">Skills To Learn</h2>
-                    <div class="skills flex">
-                        <div class="flex-direction">
-                            <img src="../assets/icons8-react-native-40.png" alt="React Logo">
-                            <p>React</p>
-                        </div>
-                        <div class="flex-direction">
-                            <img src="../assets/icons8-api-40.png" alt="API Logo">
-                            <p>API</p>
-                        </div>
-                        <div class="flex-direction">
-                            <img src="../assets/icons8-dots-loading-40.png" alt="API Logo">
-                            <p>Much More</p>
-                        </div>
-                    </div>
-                </section>
-            
-                <section class="seven reveal">
                     <h2 class="title">Languages Acquired</h2>
                     <div class="skills flex">
                         <div class="flex-direction">
@@ -166,7 +168,6 @@
                         <th></th>
                         <th>Acquired</th>
                         <th>Learning</th>
-                        <th>To learn</th>
                     </tr>
                     <tr>
                         <th>Skills</th>
@@ -199,24 +200,6 @@
                             <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
                                 Javascript*</p>
                         </div>
-                        </th>
-    
-                        <th style="padding: 8px; display: flex; gap: 10px;">
-                            <div class="flex-direction">
-                                <img src="../assets/icons8-react-native-40.png" alt="React Logo">
-                                <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
-                                    React</p>
-                            </div>
-                            <div class="flex-direction">
-                                <img src="../assets/icons8-api-40.png" alt="API Logo">
-                                <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
-                                    API</p>
-                            </div>
-                            <div class="flex-direction">
-                                <img src="../assets/icons8-dots-loading-40.png" alt="API Logo">
-                                <p style="margin-bottom: 0px; margin-top: 5px; color: white; font-weight: 400;">
-                                    Much More</p>
-                            </div>
                         </th>
                     </tr>
                     <tr>
@@ -263,4 +246,5 @@
     
 </body>
 <script src="index.js"></script>
+<script src="loader.js"></script>
 </html>
