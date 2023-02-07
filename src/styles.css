@@ -146,13 +146,6 @@ footer > ul{
     display: none;
 }
 
-.animationToLeftList{
-    animation: SlideToLeftList 2s;
-}
-
-.animationToLeftTable{
-    animation: SlideToLeftTable 2s;
-}
 
 table{
     margin-top: 33.2px;
