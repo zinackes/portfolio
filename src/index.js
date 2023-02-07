@@ -18,7 +18,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+      var elementVisible = 10;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -29,30 +29,30 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// To check the scroll position on page load
 reveal();
 
 async function is_checked_false(){
 
   animationToLeftList.classList.toggle("animate__backOutLeft");
   tableau.classList.toggle("hidden"); 
-  await delay(1050);
+  await delay(700);
   animationToLeftTable.classList.toggle("animate__backInRight");
 
   pas_tableau.classList.toggle("hidden");
   list.classList.toggle("list");
   table.classList.toggle("table");
 
-  await delay(1050);
+  await delay(700);
   animationToLeftList.classList.toggle("animate__backOutLeft");
   animationToLeftTable.classList.toggle("animate__backInRight");
+  return list;
 
 }
 async function is_checked_true(){
 
   animationToLeftTable.classList.toggle("animate__backOutLeft");
 
-  await delay(1050);
+  await delay(700);
   pas_tableau.classList.toggle("hidden");
   animationToLeftList.classList.toggle("animate__backInRight");
 
@@ -60,9 +60,10 @@ async function is_checked_true(){
   list.classList.toggle("list");
   table.classList.toggle("table");
 
-  await delay(1050);
+  await delay(700);
   animationToLeftList.classList.toggle("animate__backInRight");
   animationToLeftTable.classList.toggle("animate__backOutLeft");
+  return table;
 
 }
 
@@ -74,5 +75,8 @@ switch_button.onclick = function(){
     is_checked_true();
   }
 }
+
+
+
 
 
