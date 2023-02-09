@@ -76,7 +76,38 @@ switch_button.onclick = function(){
   }
 }
 
+let today = new Date();
+let time = today.getHours();
+let bonjour_bonsoir = document.getElementById("bonjour");
 
+
+function day_night(){
+  time > 18 ? bonjour_bonsoir.textContent = "Bonsoir": bonjour_bonsoir.textContent = "Bonjour";
+}
+
+
+let fr = document.querySelectorAll(".fr");
+let en = document.querySelectorAll(".en");
+let id_lang = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p");
+
+function switchlanguage(lang){
+  for (let i = 0; i < id_lang.length; i++){
+    id_lang[i].classList.add("active_lang");
+
+    if (lang == 'fr'){
+      for(let e = 0; e < en.length; e++){
+        en[e].classList.remove("active_lang");
+      }
+      day_night();
+    }
+    else if(lang == 'en'){
+      for(let f = 0; f < fr.length; f++){
+        fr[f].classList.remove("active_lang");
+      }
+
+    }
+  }
+}
 
 
 
